@@ -19,6 +19,10 @@ public:
     int get_element(int index);
 
     ~smart_array();
+
+    smart_array(const smart_array&) = delete;
+
+    smart_array& operator=(const smart_array&) = delete;
 };
 
 int main() {
